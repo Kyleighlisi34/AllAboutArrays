@@ -11,7 +11,7 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
-        
+            Pattern1();
 
     }
 
@@ -38,6 +38,20 @@ public class Main {
         return number;
     }
 
+    public static void Pattern1(){
+        for(int i=0;  i < 6;  i++){
+
+            for(int columns = 0; columns < 6; columns++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+
+        }
+
+
+
+    }
 
 
 
