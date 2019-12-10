@@ -49,6 +49,20 @@ public class Main {
 
         }
 
+    public static void Pattern2() {
+        for (int rows = 1; rows <= 6; rows++) {
+
+
+            for (int columns = 0; columns < 6; columns++) {
+
+
+                System.out.print(rows);
+
+            }
+            System.out.println();
+        }
+
+    }
 
 
     }
