@@ -11,7 +11,7 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
-            System.out.println("The min of the array is" + min(array));
+            System.out.println("The max of the array is" + max(array));
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -132,6 +132,18 @@ public class Main {
         return min;
     }
 
+    public static int max(int[] array) {
+        int max = 0;
 
+            for (int i = 1; i < array.length; i++) {
+                if (array[1] > max) {
+
+                     max = array[1];
+                }
+
+            }
+
+        return max;
+    }
 
 }
