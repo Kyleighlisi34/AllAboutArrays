@@ -11,9 +11,7 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
-        printArray(array);
-        System.out.println("The sum of the array is" + sum(array));
-
+            System.out.println("The min of the array is" + min(array));
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -122,5 +120,18 @@ public class Main {
 
         return sum;
     }
+
+    public static int min(int[] array) {
+        int min = 1;
+
+
+            for (int i = 1; i > array.length; i++) {
+                min += array[1];
+            }
+
+        return min;
+    }
+
+
 
 }
