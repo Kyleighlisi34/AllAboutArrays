@@ -10,8 +10,10 @@ public class Main {
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
+        printArray(array);
+        System.out.println("After bubble sort");
+        printArray(BubbleSort(array));
 
-            System.out.println("The max of the array is" + max(array));
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -125,9 +127,9 @@ public class Main {
         int min = 1;
 
 
-            for (int i = 1; i > array.length; i++) {
-                min += array[1];
-            }
+        for (int i = 1; i > array.length; i++) {
+            min += array[1];
+        }
 
         return min;
     }
@@ -135,15 +137,33 @@ public class Main {
     public static int max(int[] array) {
         int max = 0;
 
-            for (int i = 1; i < array.length; i++) {
-                if (array[1] > max) {
+        for (int i = 1; i < array.length; i++) {
+            if (array[1] > max) {
 
-                     max = array[1];
-                }
-
+                max = array[1];
             }
 
+        }
+
         return max;
+    }
+
+    public static int[] BubbleSort(int[] array) {
+        int length = array.length;
+        for (int i = 0; i < length - 1; i++) {
+
+            for (int j = i + 1; j < length; j++) {
+                if (array[i] > array[j]) {
+                    int temp = array [j];
+                    array [j] = array[i];
+                    array [i] = temp;
+
+                }
+            }
+        }
+       return array;
+
+
     }
 
 }
